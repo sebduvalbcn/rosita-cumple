@@ -44,7 +44,7 @@ const boxBody = document.querySelector('.box-body');
 const boxBodyImg = document.querySelector('.box-body .img');
 
 boxBody.addEventListener('click', function (event) {
-  event.preventDefault();
+  //event.preventDefault();
   boxBody.classList.add('hover');
 });
 
@@ -53,13 +53,6 @@ boxBody.addEventListener('transitionend', function (event) {
   console.log(event);
   boxBodyImg.style.opacity = 1;
 });
-        
-        
-document.querySelector("#regalito").click(function() {
-    window.location = "https://drive.google.com/file/d/186hCn28SHZuDQ4wiANZLqBKCzpZdnFnh/view?usp=sharing";
-})
-
-        
     </script>
 
   
