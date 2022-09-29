@@ -43,7 +43,9 @@
 const boxBody = document.querySelector('.box-body');
 const boxBodyImg = document.querySelector('.box-body .img');
 
-boxBody.addEventListener('click', function () {
+boxBody.addEventListener('click', function (event) {
+  event.preventDefault();
+  event.stopPropagation();
   console.log('hello');
   boxBody.classList.add('hover');
 });
