@@ -27,7 +27,7 @@
       <div class="box">
         <div class="box-body">
         <div class="img">
-          <a href="//drive.google.com/file/d/186hCn28SHZuDQ4wiANZLqBKCzpZdnFnh/view?usp=sharing" class="regalito">Haz click aquí para discubrir tu regalito!!!</a>
+          <a id="regalito" href="//drive.google.com/file/d/186hCn28SHZuDQ4wiANZLqBKCzpZdnFnh/view?usp=sharing" class="regalito">Haz click aquí para discubrir tu regalito!!!</a>
         </div>
           <div class="box-lid">
             
@@ -53,6 +53,14 @@ boxBody.addEventListener('transitionend', function (event) {
   console.log(event);
   boxBodyImg.style.opacity = 1;
 });
+        
+        
+document.querySelector("#regalito").click(function() {
+    window.location = "//drive.google.com/file/d/186hCn28SHZuDQ4wiANZLqBKCzpZdnFnh/view?usp=sharing";
+    return;
+})
+
+        
     </script>
 
   
